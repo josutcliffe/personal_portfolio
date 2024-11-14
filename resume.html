@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Sutcliffe Personal Portfolio</title>
+    <link href="assets/css/site.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-center">
+    <header>
+        <div class="w-full bg-cyan-500 shadow-sm">
+            <div class="container flex flex-col items-start justify-between p-6 mx-auto md:flex-row gap-2">
+                <a class="flex items-center mb-4 text-gray-900 md:mb-0 gap-2">
+                    <img src="./assets/img/html5-icon-png.jpg" alt="Header Icon" class="h-12 w-auto">
+                    <h1 class="text-2xl font-extrabold tracking-normal text-gray-900">Josh Sutcliffe Personal Portfolio</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="bg-white shadow dark:bg-gray-800">
+        <div class="container mx-auto p-6 flex flex-col md:flex-row items-center justify-center md:justify-between">
+            <button id="nav-toggle" class="md:hidden text-gray-900 dark:text-gray-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>            
+            <div id="nav-menu" class="hidden md:flex flex-col md:flex-row items-center justify-between flex-wrap space-y-4 md:space-y-0 md:space-x-4 w-full">
+                <a href="./index.html" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 px-3 py-2 rounded-md shadow-lg">Home</a>
+                <a href="./about.html" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 px-3 py-2 rounded-md shadow-lg">About</a>
+                <a href="./resume.html" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 px-3 py-2 rounded-md shadow-lg">Resume</a>
+                <a href="./projects.html" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 px-3 py-2 rounded-md shadow-lg">Projects</a>
+                <a href="./mywork.html" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 px-3 py-2 rounded-md shadow-lg">Sample Work</a>
+                <a href="./contact.html" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 px-3 py-2 rounded-md shadow-lg">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="p-6 mx-auto max-w-4xl text-left">
+        <section class="mb-8">
+            <h2 class="text-3xl font-semibold text-black mb-4">(a ficitional) Resume</h2>
+            <article class="bg-stone-500 p-6 rounded-md shadow-md mb-6">
+                <h3 class="text-2xl font-semibold text-black mb-4">Summary</h3>
+                <p class="text-lg text-black mb-4">
+                    A dedicated web developer with over 5 years of experience in designing and building responsive websites and web applications. 
+                    Proficient in both front-end and back-end technologies, with a strong emphasis on user experience, performance, and accessibility.
+                </p>
+            </article>
+            <article class="bg-stone-500 p-6 rounded-md shadow-md mb-6">
+                <h3 class="text-2xl font-semibold text-black mb-4">Skills</h3>
+                <ul class="list-disc list-inside text-lg text-black">
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React, Angular</li>
+                    <li>Node.js, Express.js</li>
+                    <li>Python, Django</li>
+                    <li>SQL, NoSQL</li>
+                    <li>Version Control (Git)</li>
+                    <li>Responsive Design</li>
+                    <li>Cross-Browser Compatibility</li>
+                </ul>
+            </article>
+            <article class="bg-stone-500 p-6 rounded-md shadow-md mb-6">
+                <h3 class="text-2xl font-semibold text-black mb-4">Experience</h3>
+                <div class="mb-4">
+                    <h4 class="text-xl font-semibold text-black">Web Developer at XYZ Company</h4>
+                    <p class="text-md text-black">June 2020 - Present</p>
+                    <p class="text-lg text-black">
+                        Developed and maintained web applications using React and Node.js. Collaborated with design teams to create user-friendly interfaces. 
+                        Improved website performance and accessibility, resulting in a 20% increase in user engagement.
+                    </p>
+                </div>
+                <div class="mb-4">
+                    <h4 class="text-xl font-semibold text-black">Frontend Developer at ABC Ltd.</h4>
+                    <p class="text-md text-black">January 2018 - May 2020</p>
+                    <p class="text-lg text-black">
+                        Built responsive websites and web applications using HTML, CSS, and JavaScript. Worked closely with backend developers to 
+                        integrate APIs and ensure seamless user experiences. Enhanced site performance and cross-browser compatibility.
+                    </p>
+                </div>
+            </article>
+            <article class="bg-stone-500 p-6 rounded-md shadow-md mb-6">
+                <h3 class="text-2xl font-semibold text-black mb-4">Education</h3>
+                <div class="mb-4">
+                    <h4 class="text-xl font-semibold text-black">Bachelor of Science in Computer Science</h4>
+                    <p class="text-md text-black">University of Western Australia, 2014 - 2017</p>
+                </div>
+                <div class="mb-4">
+                    <h4 class="text-xl font-semibold text-black">Diploma in Web Development</h4>
+                    <p class="text-md text-black">Tech Institute, 2017 - 2018</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <footer class="text-gray-900 bg-cyan-500 body-font w-full">
+        <div class="container flex flex-col items-start justify-between p-6 mx-auto md:flex-row gap-2">
+            <a class="flex items-center mb-4 title-font md:mb-0 gap-2">
+                <h1 class="text-sm">Josh Sutcliffe Personal Portfolio</h1>
+            </a>            
+            <div class="flex flex-wrap text-sm pl-6 ml-6 border-l border-gray-400 grow">
+                <p class="m-auto">© Copyright 2024 Josh Sutcliffe, all rights reserved.</p>
+            </div>
+            <div class="flex flex-wrap text-sm pl-6 ml-6 border-l border-gray-400 md:mr-auto gap-2">
+                <a href="./index.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white transition duration-500 ease-in-out">Home</a>
+                <a href="./about.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white transition duration-500 ease-in-out">About</a>
+                <a href="./resume.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white transition duration-500 ease-in-out">Resume</a>
+                <a href="./projects.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white transition duration-500 ease-in-out">Projects</a>
+                <a href="./mywork.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white transition duration-500 ease-in-out">Sample Work</a>
+                <a href="./contact.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white transition duration-500 ease-in-out">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/navmenu.js"></script>
+</body>
+</html>
