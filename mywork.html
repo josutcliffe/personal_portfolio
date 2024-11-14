@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Sutcliffe Personal Portfolio</title>
+    <link href="assets/css/site.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-center">
+    <header>
+        <div class="w-full bg-cyan-500 shadow-sm">
+            <div class="container flex flex-col items-start justify-between p-6 mx-auto md:flex-row gap-2">
+                <a class="flex items-center mb-4 text-gray-900 md:mb-0 gap-2">
+                    <img src="./assets/img/html5-icon-png.jpg" alt="Header Icon" class="h-12 w-auto">
+                    <h1 class="text-2xl font-extrabold tracking-normal text-gray-900">Josh Sutcliffe Personal Portfolio</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="bg-white shadow dark:bg-gray-800">
+        <div class="container mx-auto p-6 flex flex-col md:flex-row items-center justify-center md:justify-between">
+            <button id="nav-toggle" class="md:hidden text-gray-900 dark:text-gray-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>            
+            <div id="nav-menu" class="hidden md:flex flex-col md:flex-row items-center justify-between flex-wrap space-y-4 md:space-y-0 md:space-x-4 w-full">
+                <a href="./index.html" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 px-3 py-2 rounded-md shadow-lg">Home</a>
+                <a href="./about.html" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 px-3 py-2 rounded-md shadow-lg">About</a>
+                <a href="./resume.html" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 px-3 py-2 rounded-md shadow-lg">Resume</a>
+                <a href="./projects.html" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 px-3 py-2 rounded-md shadow-lg">Projects</a>
+                <a href="./mywork.html" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 px-3 py-2 rounded-md shadow-lg">Sample Work</a>
+                <a href="./contact.html" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 px-3 py-2 rounded-md shadow-lg">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="p-6 mx-auto max-w-4xl text-left">
+        <section class="mb-8">
+            <h2 class="text-3xl font-semibold text-black mb-4">Sample Project - Guess My Word</h2>
+            
+            <!-- Project Overview -->
+            <article class="bg-stone-500 p-6 rounded-md shadow-md mb-6">
+                <h3 class="text-2xl font-semibold text-black mb-4">Project Overview</h3>
+                <p class="text-lg text-black mb-4">
+                    "Guess My Word" is an interactive word-guessing game inspired by the popular game Wordle. The goal is to guess a hidden word within a limited number of attempts. Each guess is scored based on how accurately it matches the target word, providing feedback to help players improve their guesses. The game encourages problem-solving and logical thinking, making it both fun and educational. The game was designed to be simple yet challenging, making it accessible for users of all ages. With a user-friendly command-line interface, players can easily interact with the game and receive immediate feedback on their guesses. The game logic is robust, ensuring that every round provides a fair and engaging experience.
+                </p>
+            </article>
+    
+            <!-- Technologies Used -->
+            <article class="bg-stone-500 p-6 rounded-md shadow-md mb-6">
+                <h3 class="text-2xl font-semibold text-black mb-4">Technologies Used</h3>
+                <p class="text-lg text-black mb-4">
+                    This project was built using Python, leveraging its powerful libraries to handle game logic and user input. Key technologies and tools include:
+                    <ul class="list-disc list-inside text-lg text-black mb-4">
+                        <li>Python: Core programming language used for developing game logic, due to its simplicity and powerful features.</li>
+                        <li>Doctest: Used for testing and validating the functions to ensure accuracy and reliability. Doctest allowed for embedding test cases within the code, making it easier to maintain and understand.</li>
+                        <li>Command-Line Interface: For user interaction, inputs, and displaying game results. The CLI provided a straightforward way for players to interact with the game without needing a graphical interface.</li>
+                    </ul>
+                </p>
+            </article>
+    
+            <!-- Challenges and Solutions -->
+            <article class="bg-stone-500 p-6 rounded-md shadow-md mb-6">
+                <h3 class="text-2xl font-semibold text-black mb-4">Challenges and Solutions</h3>
+                <p class="text-lg text-black mb-4">
+                    Developing the "Guess My Word" game posed several challenges:
+                    <ul class="list-disc list-inside text-lg text-black mb-4">
+                        <li><strong>Challenge:</strong> Implementing an efficient scoring system that accurately evaluates each guess.
+                            <br><strong>Solution:</strong> Designed the <code>score_guess</code> function to compare each letter of the guess with the target word, assigning scores based on exact matches, misplaced letters, and missed letters. The function ensures that each guess is evaluated quickly and accurately, providing players with immediate feedback.
+                        </li>
+                        <li><strong>Challenge:</strong> Ensuring the game is accessible and user-friendly.
+                            <br><strong>Solution:</strong> Developed a clear and concise command-line interface, providing helpful prompts and feedback to guide players through the game. The interface was designed to be intuitive, making it easy for players to understand how to play and receive feedback on their guesses.
+                        </li>
+                        <li><strong>Challenge:</strong> Handling edge cases and input validation.
+                            <br><strong>Solution:</strong> Used extensive testing and validation to handle various scenarios, ensuring robust and error-free gameplay. By implementing thorough testing, the game can gracefully handle unexpected inputs and edge cases, maintaining a smooth user experience.
+                        </li>
+                    </ul>
+                </p>
+            </article>
+    
+            <!-- Project Screenshots or Images -->
+            <article class="bg-stone-500 p-6 rounded-md shadow-md mb-6">
+                <h3 class="text-2xl font-semibold text-black mb-4">Project Screenshots</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <img src="./assets/img/guess_my_word_1.jpg" title="guess_my_word-1" alt="guess_my_word-1" class="rounded-md shadow-md">
+                    <img src="./assets/img/guess_my_word_2.jpg" title="guess_my_word_2" alt="guess_my_word_2" class="rounded-md shadow-md">
+                    <img src="./assets/img/guess_my_word_3.jpg" title="guess_my_word_3" alt="guess_my_word_3" class="rounded-md shadow-md">
+                    <img src="./assets/img/guess_my_word_4.jpg" title="guess_my_word_4" alt="guess_my_word_4" class="rounded-md shadow-md">
+                </div>
+            </article>
+    
+            <!-- Project Results or Impact -->
+            <article class="bg-stone-500 p-6 rounded-md shadow-md mb-6">
+                <h3 class="text-2xl font-semibold text-black mb-4">Results</h3>
+                <p class="text-lg text-black mb-4">
+                    The "Guess My Word" game was well-received, providing an engaging and educational experience for users. Key results and impacts include:
+                    <ul class="list-disc list-inside text-lg text-black mb-4">
+                        <li>Enhanced problem-solving skills and logical thinking for players, as they analyzed feedback and adjusted their guesses.</li>
+                        <li>Positive user feedback on the game's simplicity and addictiveness, with many users praising its challenging yet rewarding gameplay.</li>
+                        <li>Demonstrated the effectiveness of using Python for developing interactive games, showcasing its capabilities in handling game logic and user interactions.</li>
+                        <li>Encouraged further exploration into game development and algorithmic challenges, inspiring users to create their own versions or expand on the existing game.</li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+    </main>
+    
+    <footer class="text-gray-900 bg-cyan-500 body-font w-full">
+        <div class="container flex flex-col items-start justify-between p-6 mx-auto md:flex-row gap-2">
+            <a class="flex items-center mb-4 title-font md:mb-0 gap-2">
+                <h1 class="text-sm">Josh Sutcliffe Personal Portfolio</h1>
+            </a>            
+            <div class="flex flex-wrap text-sm pl-6 ml-6 border-l border-gray-400 grow">
+                <p class="m-auto">© Copyright 2024 Josh Sutcliffe, all rights reserved.</p>
+            </div>
+            <div class="flex flex-wrap text-sm pl-6 ml-6 border-l border-gray-400 md:mr-auto gap-2">
+                <a href="./index.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white transition duration-500 ease-in-out">Home</a>
+                <a href="./about.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white transition duration-500 ease-in-out">About</a>
+                <a href="./resume.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white transition duration-500 ease-in-out">Resume</a>
+                <a href="./projects.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white transition duration-500 ease-in-out">Projects</a>
+                <a href="./mywork.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white transition duration-500 ease-in-out">Sample Work</a>
+                <a href="./contact.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white transition duration-500 ease-in-out">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/navmenu.js"></script>
+</body>
+</html>
